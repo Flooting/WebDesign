@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+              box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .coloum {
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+
+    .coloum img {
+        margin-top: 12px;
+        width: 100%;
+        height: auto;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width:600px) {
+        .coloum {
+            width: 100%;
+        }
+    }
+
+    .img-small {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .img-medium {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .img-large {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <h1>responsive grid image </h1>
+    </div>
+    <div class="row">
+        <div class="coloum">
+            <img src="images/image18.jpg" alt="heroin" class="img-large">
+            <img src="images/image13.jpg" alt="hinata" class="img-medium">
+            <img src="images/image23.jpg" alt="goku" class="img-small">
+            <img src="images/image20.jpg" alt="eren" class="img-large">
+            <img src="images/image16.jpg" alt="brock" class="img-small">
+        </div>
+        <div class="coloum">
+            <img src="images/image19.jpg" alt="titan" class="img-small">
+            <img src="images/image26.jpg" alt="thomas" class="img-small">
+            <img src="images/image27.jpg" alt="quotes" class="img-large">
+            <img src="images/image14.jpg" alt="shelby" class="img-large">
+            <img src="images/image15.jpg" alt="korean" class="img-small">
+            <img src="images/image24.jpg" alt="peaky" class="img-small">
+        </div>
+        <div class="coloum">
+            <img src="images/image12.jpg" alt="l" class="img-medium">
+            <img src="images/image17.jpg" alt="god father" class="img-small">
+            <img src="images/image21.jpg" alt="jk" class="img-large">
+            <img src="images\image22.jpg" alt="teddy" class="img-small">
+        </div>
+        <div class="coloum">
+            <img src="images/image25.jpg" alt="blinders" class="img-small">
+            <img src="images/image26.jpg" alt="grace" class="img-large">
+            <img src="images/image27.jpg" alt="notes" class="img-large">
+            <img src="images/image18.jpg" alt="heroin" class="img-large">
+            <img src="images/image15.jpg" alt="korean" class="img-small">
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bg-img {
+        min-height: 625px;
+        background-image: url(images/image.31.png); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .container {
+        margin: 30px;
+        max-width: 300px;
+        color: white;
+        float: right;
+        padding: 16px;
+    }
+
+    input[type=text],
+    input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    font-size:15px;
+  }
+   input[type=text]:focus
+   input[type=password] :focus{
+   background-color: white;
+   color: white;
+  }
+    .container button {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.88;
+  }
+
+   .button:hover{
+    opacity: 1;
+   }
+
+</style>
+<body>
+    <div class="bg-img">
+        <form class="container">
+            <h1>Login</h1>
+            <label for="e.mail"><b>E.mail</b></label>
+            <input type="text" placeholder="enter your mail i'd" name="email" required>
+            <label for="password"><b>password</b></label>
+            <input type="text" placeholder="enter your password " name="password" required>
+            <button type="submit" class="btn">login</button>
+        </form>
+    </div>
+</body>
+</html>

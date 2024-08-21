@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        border-radius: 7px;
+        background-color: grey;
+        padding: 10px;
+        position: relative;
+    }
+
+    input[type=text] {
+        border-radius: 7px;
+        resize: vertical;
+        padding: 10px;
+        width: 100%;
+        resize: vertical;
+    }
+
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    .col-75 textarea {
+        width: 100%;
+        height: 250px;
+
+    }
+
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 8px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width:600px) {
+
+        .col-25,
+        .col-75,
+        input [type=button] {
+            width: 100%;
+            margin-top: 0;
+
+        }
+
+        h1 {
+            position: relative;
+            z-index: 1;
+        }
+
+        img {
+            position: absolute;
+            z-index: 1;
+        }
+
+    }
+
+    .row button {
+        float: right;
+        background-color: green;
+        padding: 12px 20px;
+        color: wheat;
+    }
+
+    .text img {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        float: right;
+        margin-top: -90px;
+    }
+
+
+    .text h1 {
+        z-index: index -1; 
+    }
+
+    .text img {
+        z-index:1 ;
+    }
+</style>
+
+<body>
+    <h1>RESPONSIVE FORM</h1>
+    <div class="container">
+        <form>
+            <div class="text">
+                <h1>some text</h1>
+                <img src="images_123-removebg-preview.png" alt="one">
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="first name"> First name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname " name="first name" placeholder="first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="first name"> Last name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname " name="first name" placeholder="last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="first name"> Country</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname " name="first name" placeholder="country">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="first name">subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea name="write" id="write" placeholder="write something..."></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <button type="button"> submit</button>
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>

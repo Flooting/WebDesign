@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .icon {
+        background-color:rgba(0, 128, 96, 0.567);
+        padding: 20px;
+        color: white;
+        width: 10px;
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+    }
+    .container {
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        margin: auto;
+        max-width:500px;
+        margin-bottom: 20px;
+
+    }
+    .button {
+        background-color:rgba(0, 128, 96, 0.567);
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        opacity: 0.9;
+        
+    }
+    .container  input:focus {
+           border: 10px solid red;
+    }
+    .button:hover {
+        opacity: 1;
+
+    }
+</style>
+
+<body>
+    <form>
+       <center><h1>Register form</h1></center>
+        <div class="container">
+            <i class="fa fa-user icon"></i>
+            <input class="input" type="text" id="text" placeholder="user name" name="username">
+        </div>
+        <div class="container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input" type="text" id="text" placeholder="E.mail"> 
+        </div>
+        <div class="container">
+            <i class="fa fa-key icon"></i>
+            <input class="input" type="text" id="text" placeholder="Password">
+        </div>
+        <div class="container">
+        <button type="submit" class="button"> Register</button>
+    </div>
+    </form>
+
+
+</body>
+
+</html>

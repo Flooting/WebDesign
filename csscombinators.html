@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .ds p{
+        background-color: aquamarine;
+    }
+    .cs p{
+        background-color: chartreuse;
+    }
+    div   +p{
+        background-color: crimson;
+    }
+   .gsc  ~p{
+        background-color: red;
+    }
+</style>
+
+
+
+<body>
+    <h1>Descendant Selector</h1>
+    <div class="ds">
+        <p>eren</p>
+        <p>armin</p>
+        <p>mikasa</p>
+        <section><p>Attack</p></section>
+        <h5>levi</h5>
+    </div>
+    <div class="cs">
+        <h1>Child Selector</h1>
+        <p>team 7</p>
+        <p>kakshi</p>
+        <p>naruto</p>
+        <section>sasuka</section>
+        <p>sakura</p>
+    </div>
+
+<div>
+    <h1>Adjacent Sibling Selector</h1>
+  <P> butcher</p>
+    <p>hyugie</p>
+    <P>annie</P><p>
+</div>
+    <P>stare light</P>
+    <P>kimiko</P>
+<div>
+    <P>nueman</P>
+    <P>marvin</P>
+</div>
+      <P>homelander</P>
+      <P>a train</P>
+ <h1>General Sibling Selector</h1>
+       <P>got</P>
+       <p>game of thrones</p>
+       <div class="gsc">
+       <p>mother of gragon</p>
+       <P>winter is coming</P>
+       </div>
+       <P>jon snow</P>
+       <p>arya starck</p>
+       <P>three eye ravan</P>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *
+      {
+        box-sizing: border-box;
+
+    }
+    body {
+        font: size 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding:10px;
+        color: white;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -16px;
+    }
+    .col-25{
+        -ms-flex: 50%;
+        flex: 50%;
+          } 
+    .col{
+        background-color: olive;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+    }
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid white;
+        border-radius: 3px;
+    }
+
+    label {
+        margin-bottom: 10px;
+        display: block;
+      }
+      .col-50{
+        padding: 0px 16px;
+      }
+      .col {
+        background-color:olive;
+        border: 1px solid black;
+        border-radius: 15px;
+      }
+</style>
+<body>
+    <div class="row">
+        
+        <div class="col-75">
+            <div class="col">
+                <form>
+                <div class="row">
+                <div class="col-50">
+                    <label for="firstname"><I class="fa fa-user"></I> Full name</label>
+                    <input type="text" id="firstname" placeholder="k7">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="mail" id="mail" placeholder="e.mail">
+                    <label for="address"> <i class="fa fa-address-card-o"></i> address</label>
+                    <input type="address" id="address" placeholder=" home">
+                    <label for="school" id="school"><i class="fa fa-institution"></i>School</label>
+                    <input for=" school" id="school" placeholder="school">
+
+                    <div class="row">
+                        <div class="col-50">
+                          <label for="state">State</label>
+                          <input type="text" id="ny" name="state" placeholder="ny">
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" placeholder="1000">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-50">
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="card"> name of the card</label>
+            <input type="text" id="card" placeholder="type of card"> 
+            <lable for="credit">credit card number</lable>
+            <input type="text" id="credit" placeholder="1111-2222-3333-4444">
+            <lable for="expierymonth" id="erpierey">expiery number</lable>
+            <input type="text" id="month" placeholder="expiere number">
+             </div>
+             <div class="row">
+             <div class="col-50">
+                <label for="year"> expiery month</label>
+                 <input type="text" id="year" placeholder="erpiery month">
+             </div>
+             <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="cvv">
+             </div>
+             </div>
+                </div>
+            </div>
+        </form>
+            </div>
+        </div>
+    
+
+</body>
+</html>

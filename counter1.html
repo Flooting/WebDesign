@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        counter-reset: section;
+        background-color:black ;
+        color: #c5e853;
+        border: 4px solid white;
+        width: 450px;
+        position: relative;
+        
+    }
+
+    .main{
+        position: relative;
+    }
+    h1 {
+        counter-reset: subsection;
+    }
+    h1::before{
+        counter-increment: section;
+        content: "Anime" counter(section) ". ";
+        color: white;
+        margin-right: 46px;
+   
+    }
+    h2::before {
+        counter-increment: subsection;
+        content: counter(section) "." counter(subsection) " ";
+        margin-right: 150px;
+    }
+    .vl {
+        border-left: 6px solid white;
+        height: 869px;
+        position: absolute;
+        margin-left: 150px;
+        margin-top:  -865px ;
+        }
+</style>
+
+<body>
+    <div class="main">
+  <h1 style="color:red;">Attack on titan</h1><hr>
+    <h2>Eren yeager</h2><hr>
+    <h2>Armin alert</h2><hr>
+    <h2>mikasa Akerman</h2><hr>
+    <h1 style="color:yellow;">Demon slayer</h1><hr>
+    <h2>Tanjiro</h2><hr>
+    <h2>inosuka</h2><hr>
+    <h2>zenitsu</h2><hr>
+    
+    <h1 style="color: green;">Broken Hero</h1><hr>
+    <h2>Obito</h2><hr>
+    <h2>Pain</h2><hr>
+    <h2>Itachi</h2>
+    <DIV class="vl"> </DIV>
+</div>
+</body>
+</html>

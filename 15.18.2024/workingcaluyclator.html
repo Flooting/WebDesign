@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    input{
+        padding: 8px;
+        color: paleturquoise;
+        background-color: cadetblue;
+        border-radius: 15px;
+        margin: 12px;
+        font-size: larger;
+        font-weight: bolder;
+        border: none;
+        
+    }
+    button{
+        padding: 12px;
+        margin: 43px;
+        color: paleturquoise;
+        background-color: cadetblue;
+        border-radius: 15px;
+        border: none;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+</style>
+<body>
+    
+    <div>
+        <input type="number" id="x">
+        <input type="number" id="y">
+    </div>
+    <div>
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mul()">*</button>
+        <button onclick="div()">/</button>
+        <button onclick="mod()">%</button>
+        
+    </div>
+    <h1 id="demo">Answer</h1>
+    <script>
+     
+        
+     function add() {
+      var x=parseInt(document.getElementById("x").value);
+      var y=parseInt(document.getElementById("y").value);
+       var z=x+y;
+       document.getElementById("demo").innerHTML=z;
+     }
+     function sub() {
+      var x=parseInt(document.getElementById("x").value);
+      var y=parseInt(document.getElementById("y").value);
+       var z=x-y;
+       document.getElementById("demo").innerHTML=z;
+     }
+     function mul() {
+      var x=parseInt(document.getElementById("x").value);
+      var y=parseInt(document.getElementById("y").value);
+       var z=x*y;
+       document.getElementById("demo").innerHTML=z;
+     }
+     function div() {
+      var x=parseInt(document.getElementById("x").value);
+      var y=parseInt(document.getElementById("y").value);
+       var z=x/y;
+       document.getElementById("demo").innerHTML=z;
+     }
+     function mod() {
+      var x=parseInt(document.getElementById("x").value);
+      var y=parseInt(document.getElementById("y").value);
+       var z=x%y;
+       document.getElementById("demo").innerHTML=z;
+     }
+     
+    </script>
+</body>
+</html>

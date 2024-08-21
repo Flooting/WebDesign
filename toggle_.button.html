@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    <input type="checkbox" id="toggle" />
+<label for="toggle">Toggle</label>
+CSS:
+/* Style the toggle button */
+toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+/* Style the toggle button label */
+toggle label {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Style the toggle button checkbox */
+toggle input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Style the toggle button slider */
+toggle .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 30px;
+  transition: all 0.4s;
+}
+
+/* Style the toggle button slider when checked */
+toggle input[type="checkbox"]:checked + .slider {
+  background-color: #66cc00;
+}
+
+/* Style the toggle button label when checked */
+toggle input[type="checkbox"]:checked + .slider::before {
+  content: "On";
+}
+
+/* Style the toggle button label when not checked */
+toggle input[type="checkbox"]:not(:checked) + .slider::before {
+  content: "Off";
+}
+</style>
+<body>
+    
+</body>
+</html>

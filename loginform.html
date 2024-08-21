@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .img-1{
+        text-align: center;
+        border-radius: 50px;
+    }
+    .zoro{
+        border-radius: 50%;
+        width: 500px;
+        height: 500px;
+    }
+    .button-1 input {
+         width:1000px ;
+         height: 30px;
+    }
+    .bnt button {
+        width: 1000px;
+        background-color: green;
+        height: 30px;
+    }
+    .box{
+        margin: 10px;
+        margin-left: -3px;
+    }
+    .button-3{
+        background-color: grey;
+        width: 1000px;
+    }
+    .button-3 button{
+        background-color: red;
+        width: 60px;
+        height: 40px;
+        color: white; 
+        margin-top: 10px;   
+        margin-left: 10px;
+        }
+        .button-3 p  {
+            float:right;
+            border: none;
+        }
+</style>
+<body>
+    <form>
+    <div class="img-1">
+        <img src="images/icon3.jpg" alt="zoro" class="zoro">
+    </div>
+    <div class=" button-1">
+        <label for="mail"> E.Mail</label><br><br>
+        <input type="mail" id="mail" placeholder="enter your mail"><br><br>
+        <label for="psw"> Password</label><br><br>
+        <input type="text" id="psw" placeholder="your Password"><br><br>
+        <div class="bnt">
+        <button type="button" >Login</button>
+        </div>
+         </div>
+         <div class="box">
+            <input type="checkbox" id="me" name="me" value="tick">
+            <label for="me"> remember me</label>
+         </div>
+         <div class="button-3">
+            <button type="button"> cancel</button>
+             <p> forget <a href="#"> Password</a></p>
+             </div>
+    </form>
+</body>
+</html>
